@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <form id="task-form" class="task-maker">
+        <input type="text" id="task-Title" placeholder="Title">
+        <input type="text" id="task-description" placeholder="Description">
+        <input type="date" id="due-date" placeholder="Due Date">
+        <button class="submit-btn">Create</button>
+    </form>
+
+    
+
+    <select name="filter" id="filter-select" class="filter-buttons">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="not-completed">Not Completed</option>
+    </select>
+
+    <div id="task-template" style="display: none;">
+        <div class="task-card">
+            <div class="task-card-head">
+                <h3 class="task-title">Sample Title</h3>
+                <div class="card-head-date">
+                    <p class="task-date">Due Date: <span></span></p>
+                    <button class="deletebtn"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                
+            </div>
+            
+            <p class="task-desc">Sample Description</p>
+            <p>Status: <span class="status-text">Pending</span></p>
+            <div class="control-btns">
+                <button class="complete-btn">Mark as Complete</button>
+                <button class="edit-btn">✏️ Edit</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="task-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
