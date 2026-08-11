@@ -1,4 +1,7 @@
-export const authMiddleware = async (req, res, next) => {
+import jwt from "jsonwebtoken";
+import User from "../models/User.js";
+
+const authMiddleware = async (req, res, next) => {
     try {
         const token = req.cookies.token;
 
@@ -41,3 +44,5 @@ export const authMiddleware = async (req, res, next) => {
         });
     }
 };
+
+export default authMiddleware;
