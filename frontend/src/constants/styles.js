@@ -174,7 +174,7 @@ const styles = {
     
     //TaskList
     taskList:
-        "grid grid-cols-1 lg:grid-cols-2 gap-4 mb-12",
+        "grid grid-cols-1 lg:grid-cols-2 gap-4 pb-12",
 
     emptyState:
         "rounded-2xl border border-white/10 bg-white/5 p-10 text-center",
