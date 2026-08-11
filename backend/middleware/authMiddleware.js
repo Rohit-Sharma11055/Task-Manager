@@ -1,4 +1,4 @@
-const authMiddleware = async (req, res, next) => {
+export const authMiddleware = async (req, res, next) => {
     try {
         const token = req.cookies.token;
 
